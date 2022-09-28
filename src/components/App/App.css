@@ -1,0 +1,55 @@
+
+
+
+nav {
+  background-color: #3936f0;
+  
+}
+
+form {
+  background-color: #3936f0;
+    border-radius: 40px;
+    color: rgb(240, 230, 230);
+    margin: 50px auto;
+    padding: 50px;
+    width: 90%;
+}
+
+img {
+  height: 800px;
+  width: 600px;
+}
+
+.img-list.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px;
+  padding: 34px;
+  border-radius: 50px;
+  background-color: #3936f0;
+  width: 62%;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: rgb(240, 230, 230);
+  font-size: 30px;
+}
+
+label {
+  color: rgb(240, 230, 230);
+  font-size: 25px;
+}
+
+.btn.btn-success {
+  margin-left: 20px;
+}
+
+span.navbar-brand {
+  color: rgb(240, 230, 230);
+  font-size: 30px;
+}
