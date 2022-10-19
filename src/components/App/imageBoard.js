@@ -5,30 +5,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 
-function ImageBoard({pics, addImage}) {
-    return(
-      <div>
-      <Navbar classname="nav-bar">
-        <Container fluid>
-        <Navbar.Brand classname="title">Corey's Image Board</Navbar.Brand>
+function ImageBoard({items, addImage}) {
+  return(
+      <div className='container'>
+      <Navbar className="nav-bar">
+        <Container>
+        <Navbar.Brand className="title">Corey's Image Board</Navbar.Brand>
         </Container>
       </Navbar>
-        <Container fluid classname="img-form">
-        <ImageForm  addImage={addImage}/>
+        <Container className="img-form">
+        <ImageForm  addImage={addImage} />
         </Container>
-        <Container Fluid className='img-list'>
-        <ImageList pics={pics}/>
+        <Container className='img-list'>
+        <ImageList items={items} />
         </Container>
-      
-
-          
-
-
-
-
-      
-        {/* <ImageForm  addImage={addImage}/>
-        <ImageList pics={pics}/> */}
       </div>
     )
   }

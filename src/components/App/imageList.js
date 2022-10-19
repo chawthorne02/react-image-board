@@ -1,17 +1,20 @@
 
 
 
-function ImageList({pics}){
-    const picItems = pics.map(({src, caption}) => (
-    <li>
+function ImageList({items}){
+    const listItems = items.map(({id, src ,text}) => (
+    <li key={id}>
         <img src ={src} />
-        <p>{caption}</p>
+        <p>{text}</p>
     </li>
     ));
+
+    
     return(
       <ul>
-        {picItems}
+        {listItems}
       </ul>
+      
     )
   };
 
